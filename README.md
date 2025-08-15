@@ -1,4 +1,4 @@
-# s18.in - Mysterious Services Division
+# Mysterious Services Division
 
 You've discovered **s18.in**: the internet's most exclusive club that looks like a secret code.
 
