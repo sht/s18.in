@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>s18.in - Mysterious Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 20%);
+            pointer-events: none;
+        }
+        
+        .container {
+            max-width: 800px;
+            z-index: 1;
+        }
+        
+        .header {
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .subtitle {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+        
+        .ascii-art {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 30px 0;
+            font-family: 'Courier New', monospace;
+            text-align: left;
+            overflow-x: auto;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .message {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 25px;
+            margin: 30px 0;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .highlight {
+            color: #ff7e5f;
+            font-weight: bold;
+        }
+        
+        .footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 0.7; }
+            50% { opacity: 1; }
+            100% { opacity: 0.7; }
+        }
+        
+        .secret {
+            position: absolute;
+            font-size: 0.8rem;
+            opacity: 0.1;
+        }
+        
+        .secret-1 { top: 10%; left: 5%; }
+        .secret-2 { top: 20%; right: 7%; }
+        .secret-3 { bottom: 15%; left: 8%; }
+        .secret-4 { bottom: 25%; right: 5%; }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .message {
+                padding: 15px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Secret decorative elements -->
+    <div class="secret secret-1">[REDACTED]</div>
+    <div class="secret secret-2">CLASSIFIED</div>
+    <div class="secret secret-3">TOP SECRET</div>
+    <div class="secret secret-4">EYES ONLY</div>
+    
+    <div class="container">
+        <div class="header">
+            <h1>s18.in</h1>
+            <div class="subtitle">Mysterious Services Division</div>
+        </div>
+        
+        <div class="ascii-art">
+<pre>
+    ███████╗ ██████╗ ██╗      █████╗ ███╗   ██╗████████╗
+    ██╔════╝██╔═══██╗██║     ██╔══██╗████╗  ██║╚══██╔══╝
+    ███████╗██║   ██║██║     ███████║██╔██╗ ██║   ██║   
+    ╚════██║██║   ██║██║     ██╔══██║██║╚██╗██║   ██║   
+    ███████║╚██████╔╝███████╗██║  ██║██║ ╚████║   ██║   
+    ╚══════╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   
+                                                      
+    ███╗   ███╗ █████╗ ██████╗ ██████╗ ██╗██╗  ██╗     
+    ████╗ ████║██╔══██╗██╔══██╗██╔══██╗██║╚██╗██╔╝     
+    ██╔████╔██║███████║██████╔╝██████╔╝██║ ╚███╔╝      
+    ██║╚██╔╝██║██╔══██║██╔══██╗██╔══██╗██║ ██╔██╗      
+    ██║ ╚═╝ ██║██║  ██║██║  ██║██║  ██║██║██╔╝ ██╗     
+    ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚═╝  ╚═╝     
+                                                      
+    ███████╗██╗   ██╗███╗   ██╗██████╗ ███████╗██████╗ 
+    ██╔════╝██║   ██║████╗  ██║██╔══██╗██╔════╝██╔══██╗
+    ███████╗██║   ██║██╔██╗ ██║██║  ██║█████╗  ██████╔╝
+    ╚════██║██║   ██║██║╚██╗██║██║  ██║██╔══╝  ██╔══██╗
+    ███████║╚██████╔╝██║ ╚████║██████╔╝███████╗██║  ██║
+    ╚══════╝ ╚═════╝ ╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝
+</pre>
+        </div>
+        
+        <div class="message">
+            <p>You've discovered <span class="highlight">s18.in</span>: the internet's most exclusive club that looks like a secret code.</p>
+            <p><br></p>
+            <p>This is <span class="highlight">not a website</span>.</p>
+            <p>This is <span class="highlight">not a blog</span>.</p>
+            <p>This is <span class="highlight">not a social network</span>.</p>
+            <p><br></p>
+            <p>This is just a domain that sounds like you're in a spy movie.</p>
+        </div>
+        
+        <div class="ascii-art">
+<pre>
+          .-') _   _  .-')              .-') _    
+         (  OO) ) ( \( -O )            (  OO) )   
+     ,--./ ,--,'  ,------.  .-'),-----. /     '._  
+     |   \ |  |\  |   /`. ' ( OO'  .-.  '|'--...__)
+     |    \|  | ) |  /  | | /   |  | |  |'--.  .--' 
+     |  .     |/  |  |_.' | \_) |  |\|  |   |  |    
+     |  |\    |   |  .  '.'   \ |  | |  |   |  |    
+     |  | \   |   |  |\  \     `'  '-'  '   |  |    
+     `--'  `--'   `--' '--'      `-----'    `--'    
+</pre>
+        </div>
+        
+        <div class="message">
+            <p class="pulse">Congratulations! You're already cooler than most people who just type s18.in into their browser.</p>
+            <p><br></p>
+            <p>There's nothing else to see here. Move along, citizen.</p>
+        </div>
+        
+        <div class="footer">
+            <p>© 2025 s18.in - Mysterious Services Division</p>
+            <p>Short domains save precious typing time. We couldn't afford .com.</p>
+        </div>
+    </div>
+    
+    <script>
+        // Add a subtle interactive effect
+        document.addEventListener('DOMContentLoaded', function() {
+            const secrets = document.querySelectorAll('.secret');
+            secrets.forEach(secret => {
+                // Randomize positions slightly
+                const top = parseInt(secret.style.top || 0);
+                const left = parseInt(secret.style.left || 0);
+                secret.style.top = (top + (Math.random() * 10 - 5)) + '%';
+                secret.style.left = (left + (Math.random() * 10 - 5)) + '%';
+            });
+            
+            // Add a subtle hover effect to the main title
+            const title = document.querySelector('h1');
+            title.addEventListener('mouseover', function() {
+                this.style.textShadow = '0 0 20px #ff7e5f, 0 0 30px #feb47b';
+            });
+            
+            title.addEventListener('mouseout', function() {
+                this.style.textShadow = '0 2px 10px rgba(0, 0, 0, 0.2)';
+            });
+        });
+    </script>
+</body>
+</html>
